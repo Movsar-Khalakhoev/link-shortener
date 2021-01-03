@@ -1,0 +1,25 @@
+{
+  "name": "mern-link-shortener",
+  "version": "1.0.0",
+  "description": "MERN stack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Movsar-Khalakhoev/link-shortener.git"
+  },
+  "keywords": [
+    "MongoDB",
+    "ReactJS",
+    "ExpressJS",
+    "NodeJS"
+  ],
+  "author": "Movsar-Khalakhoev <movsar.kh.128@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Movsar-Khalakhoev/link-shortener/issues"
+  },
+  "homepage": "https://github.com/Movsar-Khalakhoev/link-shortener#readme"
+}
