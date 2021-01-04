@@ -8,7 +8,7 @@ const linkRoutes = require('./routes/link')
 const redirectRoutes = require('./routes/redirect')
 
 const app = express()
-const PORT = config.get('PORT') || 5000
+const PORT = process.env.NODE_ENV === 'production' ? process.env.PORT : config.get('PORT') || 5000
 
 
 app.use(express.json())
