@@ -1,0 +1,7 @@
+{
+  "PORT": 5000,
+  "DB_URL": "mongodb+srv://Movsar:CSEfcXf0ncjEMxoP@cluster0.3ej2m.mongodb.net/app",
+  "DB_PASSWORD": "CSEfcXf0ncjEMxoP",
+  "JWT_SECRET": "secret",
+  "BASE_URL": "https://murmuring-bastion-67007.herokuapp.com/"
+}
