@@ -4,14 +4,15 @@
   "description": "MERN stack",
   "main": "index.js",
   "engines": {
-    "node": "12.16.1"
+    "node": "12.16.1",
+    "npm": "6.14.8"
   },
   "scripts": {
     "start": "node index.js",
     "server": "nodemon index.js",
     "client": "npm run start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "build": "concurrently \"npm i\" \"npm i --prefix client\"",
+    "heroku": "concurrently \"npm i\" \"npm i --prefix client\"",
     "heroku-postbuild": "npm run build --prefix client"
   },
   "repository": {
