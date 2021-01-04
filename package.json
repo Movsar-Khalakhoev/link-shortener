@@ -11,8 +11,8 @@
     "start": "node index.js",
     "server": "nodemon index.js",
     "client": "npm run start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "heroku": "concurrently \"npm i\" \"npm i --prefix client\""
+    "client:install": "npm install --prefix client",
+    "client:build": "npm run build --prefix client"
   },
   "repository": {
     "type": "git",
