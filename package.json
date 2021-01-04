@@ -12,8 +12,7 @@
     "server": "nodemon index.js",
     "client": "npm run start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "heroku": "concurrently \"npm i\" \"npm i --prefix client\"",
-    "heroku-postbuild": "npm run build --prefix client"
+    "heroku": "concurrently \"npm i\" \"npm i --prefix client\""
   },
   "repository": {
     "type": "git",
