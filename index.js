@@ -16,9 +16,11 @@ app.use('/api/links', linkRoutes)
 app.use('/t', redirectRoutes)
 
 if (process.env.NODE_ENV === 'production') {
+  console.log('point 1')
   app.use('/', express.static(path.join(__dirname, 'client', 'build')))
 
   app.get('*', (req, res) => {
+    console.log('point 2')
     res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'))
   })
 }
