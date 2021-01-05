@@ -8,7 +8,6 @@ const linkRoutes = require('./routes/link')
 const redirectRoutes = require('./routes/redirect')
 
 const app = express()
-const PORT = process.env.NODE_ENV === 'production' ? process.env.PORT : config.get('PORT') || 5000
 
 
 app.use(express.json())
@@ -41,5 +40,5 @@ async function start() {
   }
 }
 
-start().then(() => app.listen(PORT,
+start().then(() => app.listen(config.get('PORT'),
   () => console.log(`Server has been started on port ${config.get('PORT')}...`)))
