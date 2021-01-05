@@ -15,14 +15,11 @@ app.use('/api/auth', authRoutes)
 app.use('/api/links', linkRoutes)
 app.use('/t', redirectRoutes)
 
-console.log(process.env.NODE_ENV, process.env.NODE_ENV === 'production')
 if (process.env.NODE_ENV === 'production') {
-  console.log('started')
-  app.use('/', express.static(path.join(__dirname, 'client', 'public')))
+  app.use('/', express.static(path.join(__dirname, 'client', 'build')))
 
   app.get('*', (req, res) => {
-    console.log('fetched')
-    res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'))
+    res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'))
   })
 }
 
